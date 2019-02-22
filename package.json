@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-eslint-gammadia",
+  "name": "eslint-plugin-gammadia",
   "version": "0.0.0",
   "description": "Gammadia's ESLint rules",
   "keywords": [

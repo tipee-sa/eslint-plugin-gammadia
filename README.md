@@ -10,7 +10,7 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-eslint-gammadia`:
+Next, install `eslint-plugin-gammadia`:
 
 ```
 $ npm install eslint-plugin-eslint-gammadia --save-dev
@@ -36,7 +36,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "eslint-gammadia/rule-name": 2
+        "eslint-gammadia/no-react-router-navlink": 2
     }
 }
 ```
