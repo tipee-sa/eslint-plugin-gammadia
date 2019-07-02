@@ -21,8 +21,8 @@ var ruleTester = new RuleTester();
 ruleTester.run("forms", rule, {
 
     valid: [
-        "<Form><ModalHeader /><TranslateElement component={Button} id='tipee.close' color='default' outline /><TranslateElement component={Button} type='submit' /></Form>",
-        "<Form><TranslateElement component={ModalHeader} /><TranslateElement component={Button} id='tipee.close' color='default' outline /><TranslateElement component={Button} type='submit' /></Form>"
+        "<Form><ModalHeader /><TranslateElement component={Button} id='tipee.cancel' color='default' outline /><TranslateElement component={Button} type='submit' /></Form>",
+        "<Form><TranslateElement component={ModalHeader} /><TranslateElement component={Button} id='tipee.cancel' color='default' outline /><TranslateElement component={Button} type='submit' /></Form>"
     ],
 
     invalid: [
@@ -56,7 +56,7 @@ ruleTester.run("forms", rule, {
                     type: "JSXElement"
                 },
                 {
-                    message: "First button must be a close button (outline, value equals 'tipee.close', color equals 'default'",
+                    message: "First button must be a close button (outline, value equals 'tipee.cancel', color equals 'default'",
                     type: "JSXElement"
                 }
             ]
@@ -65,13 +65,13 @@ ruleTester.run("forms", rule, {
             code: "<Form><ModalHeader /><TranslateElement component={Button} id='test' /><TranslateElement component={Button} type='submit' /></Form>",
             errors: [
                 {
-                    message: "First button must be a close button (outline, value equals 'tipee.close', color equals 'default'",
+                    message: "First button must be a close button (outline, value equals 'tipee.cancel', color equals 'default'",
                     type: "JSXElement"
                 }
             ]
         },
         {
-            code: "<Form><ModalHeader /><TranslateElement component={Button} id='tipee.close' color='default' outline /></Form>",
+            code: "<Form><ModalHeader /><TranslateElement component={Button} id='tipee.cancel' color='default' outline /></Form>",
             errors: [
                 {
                     message: "Submit button missing in form",
