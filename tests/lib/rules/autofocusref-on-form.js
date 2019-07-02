@@ -63,6 +63,13 @@ ruleTester.run("autofocusref-on-form", rule, {
                 message: "Missing useAutoFocusRef() on one element in this form",
                 type: "JSXElement"
             }]
+        },
+        {
+            code: "import { autoFocusRef } from 'core/hooks'; () => { const ref = useAutoFocusRef(); return (<form><Dummy><input type=\"text\" ref={ref} /> <input type=\"text\" innerRef={ref} /></Dummy><button>submit</button></form>); }",
+            errors: [{
+                message: "useAutoFocusRef() is present more than once on this form",
+                type: "JSXElement"
+            }]
         }
     ]
 });
